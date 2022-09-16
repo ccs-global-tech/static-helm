@@ -8,6 +8,10 @@ const cors = require('cors');
 app.use(cors());
 app.use("/public", express.static("public"));
 
+app.use("/review", (req, res) => {
+    res.sendFile(__dirname + "/index.html");
+});
+
 app.listen(port, ()=>{
     console.log(`Server running at http://localhost:${port}/`);
 });

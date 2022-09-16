@@ -1,0 +1,29 @@
+/* Component: 3D Button */
+.btn { padding: 15px 12px; border-radius: 5px; background-image: linear-gradient(-45deg, #00DCFF, #007cb6); min-width: 120px; display: inline-block; text-align: center; cursor: pointer; font-weight: bold; }
+.btn:hover { background-image: linear-gradient(-45deg, #00bdda, #006a9b); }
+
+/* Component: Automated Testing hero */
+#automated-testing { color: white; background: url(../images/automated-testing-primary.jpg); background-size: cover;}
+#automated-testing .section-title .text-highlight { color: var(--primary); display: block; font-size: clamp(32px, 3vw, 48px); }
+#automated-testing .intro-text { max-width: 800px; margin-top: 40px; margin-bottom: 40px; }
+
+/* Component: Features */
+#automated-features .features { display: grid; grid-template-columns: 1fr 1fr; gap: 30px;}
+#automated-features .feature .icon img { max-width: 80px; height: auto; }
+#automated-features .main-content { background: var(--off-white); padding: 25px; }
+#automated-features .feature .title { color: var(--primary-dark); }
+
+/* Component: Benefits */
+#automated-benefits { background: var(--primary-light); }
+#automated-benefits .section-subtitle { color: var(--primary-dark); }
+#automated-benefits .benefits { margin-top: 40px; position:relative; }
+#automated-benefits .benefit { display: flex; align-items: flex-start; }
+#automated-benefits .benefit img { max-width: 20px; height: auto; margin-right: 15px; position: relative; top: 3px; }
+
+
+@media all and (max-width: 1000px) {
+	#automated-features .row { flex-direction: column; }
+	.col { width: 100% !important; }
+	#automated-features .features { grid-template-columns: 1fr; gap: 20px; }
+	#automated-features .feature { text-align: center; }
+}
