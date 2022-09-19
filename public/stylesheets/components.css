@@ -13,6 +13,7 @@
 #automated-features .feature .icon img { max-width: 80px; height: auto; }
 #automated-features .main-content { background: var(--off-white); padding: 25px; }
 #automated-features .feature .title { color: var(--primary-dark); margin-top: 5px; margin-bottom: 10px; }
+#automated-features .feature .content { padding-bottom: 0 !important; margin: 0; }
 
 /* Component: Benefits */
 #automated-benefits { background: var(--primary-light); }
@@ -20,7 +21,6 @@
 #automated-benefits .benefits { margin-top: 40px; position:relative; }
 #automated-benefits .benefit { display: flex; align-items: flex-start; }
 #automated-benefits .benefit img { max-width: 20px; height: auto; margin-right: 15px; position: relative; top: 3px; }
-#automated-benefits .benefit .content { padding-bottom: 0 !important; }
 
 @media all and (max-width: 1000px) {
 	#automated-features .row { flex-direction: column; }
