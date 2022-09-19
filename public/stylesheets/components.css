@@ -11,7 +11,7 @@
 /* Component: Features */
 #automated-features .features { display: grid; grid-template-columns: 1fr 1fr; gap: 30px;}
 #automated-features .feature .icon img { max-width: 80px; height: auto; }
-#automated-features .main-content { background: var(--off-white); padding: 25px; }
+#automated-features .main-content { background: var(--off-white); padding: 25px; margin-bottom: 20px; margin-right: 50px; }
 #automated-features .feature .title { color: var(--primary-dark); margin-top: 5px; margin-bottom: 10px; }
 #automated-features .feature .content { padding-bottom: 0 !important; margin: 0; }
 
@@ -23,6 +23,7 @@
 #automated-benefits .benefit img { max-width: 20px; height: auto; margin-right: 15px; position: relative; top: 3px; }
 
 @media all and (max-width: 1000px) {
+	#automated-features .main-content { margin-right: 0; }
 	#automated-features .row { flex-direction: column; }
 	.col { width: 100% !important; }
 	#automated-features .features { grid-template-columns: 1fr; gap: 20px; }
