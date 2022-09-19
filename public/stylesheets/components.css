@@ -9,7 +9,7 @@
 #automated-testing .intro-text { max-width: 800px; margin-top: 40px; margin-bottom: 40px; }
 
 /* Component: Features */
-#automated-features .features { display: grid; grid-template-columns: 1fr 1fr; gap: 30px;}
+#automated-features .features { display: grid; grid-template-columns: 1fr 1fr;}
 #automated-features .feature .icon img { max-width: 80px; height: auto; }
 #automated-features .main-content { background: var(--off-white); padding: 25px; margin-bottom: 20px; margin-right: 50px; }
 #automated-features .feature .title { color: var(--primary-dark); margin-top: 5px; margin-bottom: 10px; }
