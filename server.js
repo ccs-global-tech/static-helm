@@ -9,7 +9,7 @@ app.use(cors());
 app.use("/public", express.static("public"));
 
 app.use("/review", (req, res) => {
-    res.sendFile(__dirname + "/index.html");
+    res.send("No review file mounted.");
 });
 
 app.listen(port, ()=>{
