@@ -5,6 +5,7 @@
 /* Component: Automated Testing hero */
 #automated-testing { color: white; background: url(../images/automated-testing-primary.jpg); background-size: cover;}
 #automated-testing .section-title .text-highlight { color: var(--primary); display: block; font-size: clamp(32px, 3vw, 48px); }
+#automated-testing .section-title { color: white; }
 #automated-testing .intro-text { max-width: 800px; margin-top: 40px; margin-bottom: 40px; }
 
 /* Component: Features */
