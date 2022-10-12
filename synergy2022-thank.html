@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="./public/stylesheets/theme.css"/>
+    <link rel="stylesheet" type="text/css" href="./public/stylesheets/core.css"/>
+    <link rel="stylesheet" type="text/css" href="./public/stylesheets/components.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+</head>
+<body>
+
+	<div id="synergy-wrapper" class="custom-html-wrapper">
+        <div class="container section-padding">
+            <div class="synergy-header">
+                <div class="synergy-intro">
+                    <a href="/">
+                        <h2 class="logo helm-logo"><img src="https://helm360.com/wp-content/uploads/2022/10/logo-helm-gold.png"/></h2>
+                    </a>
+                    <span class="logo syn-logo"><img src="https://helm360.com/wp-content/uploads/2022/10/logo-synergy2022.png"/></span>
+                    <h2 class="logo syn-logo-text"><img src="https://helm360.com/wp-content/uploads/2022/10/logo-synergy2022-text.png"/></h2>
+                </div>
+                <p class="synergy-tagline">
+                    Automate, Accelerate, Evolve.
+                </p>
+            </div>
+    
+            <div class="synergy-main">
+                <div class="synergy-thank">
+                    <h1 class="title">Thank You for Participating!</h1>
+                    <p>You will be redirected back in <span id="rdr">5</span> seconds</p>
+                </div>
+            </div>
+    
+            <div class="synergy-footer">
+                Helm360 &copy; 2022. All Rights Reserved.
+            </div>
+        </div>
+
+        <script>
+            let rdr = document.getElementById("rdr");
+            let count = 5;
+            let interval = setInterval(()=>{
+                console.log(1111);
+                if(count==1) {
+                    clearInterval(interval);
+                    window.location = "https://helm360.com/synergy2022/";
+                    return;
+                }
+                count-=1;
+                rdr.innerHTML = count;
+            }, 1000);
+        </script>
+	</div>
+
+</body>
+</html>

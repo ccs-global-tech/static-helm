@@ -22,10 +22,69 @@
 #automated-benefits .benefit { display: flex; align-items: flex-start; }
 #automated-benefits .benefit img { max-width: 20px; height: auto; margin-right: 15px; position: relative; top: 3px; }
 
+/* Page: Synergy2022 */
+#synergy-wrapper { display: flex; flex-direction: column; font-family: 'Open Sans', sans-serif;background-image: url('https://helm360.com/wp-content/uploads/2022/10/seamless-gray-texture.jpg'); background-size: 15% auto; min-height: 100vh; }
+#synergy-wrapper .container { display: flex; padding: clamp(20px, 4vw, 20px) 20px; flex: 1; max-width: 1400px; margin: 0 auto; flex-direction: column; justify-content: space-between; height: 100%;  }
+.synergy-header { color: #ffb85b; }
+.synergy-intro img { width: 100%; height: auto; }
+.synergy-header .synergy-intro { display: flex; justify-content: center; align-items: center; }
+.synergy-header .synergy-intro > * { margin: 0; }
+.synergy-header .synergy-x { font-weight: bold; font-size: 74px; margin-left: 20px; margin-right: 20px; }
+.synergy-header .synergy-tagline { color: #FFF; font-size: 18px; text-align: center; font-weight: bold; margin-top: -5px; margin-bottom: 50px; }
+
+.synergy-intro .logo img { max-width: 200px; }
+.synergy-intro .syn-logo img { max-width: 150px; }
+
+.synergy-main {  }
+.synergy-main .synergy-cards-container { display: grid; gap: 40px; grid-template-columns: minmax(280px, 1fr) minmax(280px, 1fr) minmax(280px, 1fr); }
+.synergy-card { background: rgb(63, 63, 63); border-radius: 10px; overflow: hidden; color: white; }
+.synergy-card .card-inner { display: flex; flex-direction: column; height: 100%; }
+.synergy-card .title { background-image: linear-gradient(90deg, #a8814e, #ffc57a); background-size: 100% auto; margin: 0; font-size: clamp(22px, 2vw, 24px); padding: 20px; }
+.synergy-card .card-content { margin-bottom: 45px; margin-top:0; padding: 20px; }
+.synergy-card .card-title-sep { width: clamp(50px, 25%, 100px); height: 4px; border-radius: 5px; background-image:url('../images/synergy2022-gold-texture.jpg'); background-size: cover; margin-bottom: 5px; }
+.synergy-card .synergy-link { display: flex; align-items: center; margin-top: auto; padding: 20px; background: #333; cursor: pointer; color: var(--synergy-primary); }
+.synergy-card .synergy-link:hover { background: #2d2d2d; }
+.synergy-card .synergy-link i { font-size: 24px; margin-right: 12px; }
+
+.synergy-links { display: flex; justify-content: center; margin-top: 40px; flex-wrap: wrap; align-items: center; }
+.synergy-links a:hover { background: var(--synergy-primary-hover); }
+.synergy-links a { background: var(--synergy-primary); margin: 10px; padding: 20px; border-radius: 5px; }
+
+.synergy-footer { color: #BBB; text-align: center; margin-top: 40px; margin-bottom: 20px;  }
+
+/* Synergy Contact Form */
+.synergy-main .form-one { color: white; padding: 40px; background: rgb(63, 63, 63); border-radius: 10px; }
+.form-one .go-back { color: var(--synergy-primary); }
+.form-one .go-back:hover { color: var(--synergy-primary-hover); }
+.form-one .title { margin: 0 0 40px 0; font-size: clamp(26px, 3vw, 36px); }
+.form-one .fieldset { margin-bottom: 20px; display: flex; align-items: center; }
+.form-one .fieldset label { min-width: 120px; }
+.form-one .fieldset input { width: 100%; padding: 10px; border-radius: 5px; outline: none; border: none; background-color: rgba(255,255,255,0.2); color: white; font-size: 16px; }
+.form-one .fieldset input:focus { background-color: rgba(255,255,255,0.3); }
+.form-one .form-submission input { padding: 10px 30px; border-radius: 5px; background: var(--synergy-primary); font-size: 16px; border: none; outline: none; cursor: pointer; }
+.form-one .checkbox-container { display: flex; flex-wrap: wrap; gap: 10px; }
+.form-one .checkbox { background: #666; padding: 5px 10px; border-radius: 5px; margin-bottom: 10px; cursor: pointer; font-size: 14px; }
+.form-one .checkbox:hover { background: #777; }
+.form-one .checkbox input { margin-right: 7px; }
+.form-one .form-submission input:hover { background: var(--synergy-primary-hover); }
+
+.synergy-thank { text-align: center;color: rgb(66, 55, 23); background: var(--synergy-primary); padding: 40px 40px; border-radius: 10px; margin-top: -100px; }
+.synergy-thank .title { margin-bottom: 15px; }
+.synergy-thank > * { margin: 0; }
+#rdr { font-weight: bold; }
+
 @media all and (max-width: 1000px) {
 	#automated-features .main-content { margin-right: 0; }
 	#automated-features .row { flex-direction: column; }
 	.col { width: 100% !important; }
 	#automated-features .features { grid-template-columns: 1fr; gap: 20px; }
 	#automated-features .feature { text-align: center; }
+
+	/* Synergy */
+	.synergy-main .synergy-cards-container { grid-template-columns: clamp(270px, 100%, 400px); justify-content: center; }
+}
+
+@media all and (max-width: 500px) {
+	.synergy-main .form-one { padding: 20px; }
+	.synergy-main .form-submission input { width: 100%; }
 }
